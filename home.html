@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio Using HTML and CSS |Akshay</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Akshay.</a>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="bars-animation">
+       <div class="bar" style="--i:6;"></div>
+       <div class="bar" style="--i:5;"></div>
+       <div class="bar" style="--i:4;"></div>
+       <div class="bar" style="--i:3;"></div>
+       <div class="bar" style="--i:2;"></div>
+       <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+           <h1>Akshay Pradeep</h1> 
+           <h2>I'm a 
+            <span style="--i:4;" data-text="Professional Coder">Professional Coder</span>
+            <span style="--i:3;" data-text="Web Designer"> Web Designer</span>
+            <span style="--i:2;" data-text="Blogger">Blogger</span>
+            <span style="--i:1;" data-text="Youtuber">Youtuber</span>
+           </h2>
+           <p> I am Akshay Pradeep, a passionate and skilled professional coder with expertise in multiple programming languages like Python, Java, MySql, html and css. I specialize in developing efficient, scalable and innovative solutions.</p>
+           <div class="btn-sci">
+            <a href= "MyCV.pdf" class="btn">Download CV</a>
+            <div class="sci">
+               <a href="https://github.com/AkshayCS50"><i class='bx bxl-github'></i></a>
+               <a href=https://www.linkedin.com/in/akshay-pradeep-54286732a/"><i class='bx bxl-linkedin' ></i></a> 
+            </div>
+           </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="home.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+          document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+      
+         
+</body>
+</html>
